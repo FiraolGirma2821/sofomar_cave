@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sof Omar Cave - Bale, Ethiopia</title>
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header>
+    <img src="logo.svg" alt="Sof Omar Cave Logo" class="logo" />
+
+    <h1 data-en="Sof Omar Cave" data-om="Holqa Sof Omaar" data-am="የሶፍ ኡመር ዋሻ">
+      Sof Omar Cave
+    </h1>
+    <p data-en="Ethiopia's Longest Cave System — Bale Zone, Oromia"
+       data-om="Holqa dheeraa Itoophiyaa — Godina Baalee, Oromiyaa"
+       data-am="የኢትዮጵያ ረጅሙ ዋሻ — ባሌ ዞን፣ ኦሮሚያ">
+      Ethiopia's Longest Cave System — Bale Zone, Oromia
+    </p>
+
+    <div class="controls">
+      <!-- LANGUAGE SWITCHER -->
+      <div class="lang-switch">
+        <button onclick="setLang(event,'en')" class="active">EN</button>
+        <button onclick="setLang(event,'om')">OM</button>
+        <button onclick="setLang(event,'am')">አማ</button>
+      </div>
+
+      <!-- DARK MODE -->
+      <button id="themeBtn" class="theme-btn" title="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <!-- ============ NAV ============ -->
+  <nav>
+    <a href="#about"     data-en="About"     data-om="Waa'ee"      data-am="ስለ">About</a>
+    <a href="#gallery"   data-en="Gallery"   data-om="Suuraa"      data-am="ፎቶ">Gallery</a>
+    <a href="#features"  data-en="Features"  data-om="Amaloota"    data-am="ባህሪያት">Features</a>
+    <a href="#map"       data-en="Map"       data-om="Kaartaa"     data-am="ካርታ">Map</a>
+    <a href="#visit"     data-en="Visit"     data-om="Daawwannaa"  data-am="ጉብኝት">Visit</a>
+    <a href="#visitors"  data-en="Visitors"  data-om="Daawwattoota" data-am="ጎብኚዎች">Visitors</a>
+    <a href="#customerLog" data-en="Customers" data-om="Maamiltoota" data-am="ደንበኞች">Customers</a>
+    <a href="#contact"   data-en="Contact"   data-om="Quunnamtii"  data-am="አግኙን">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about">
+      <h2 data-en="About Sof Omar Cave" data-om="Waa'ee Holqa Sof Omaar" data-am="ስለ ሶፍ ኡመር ዋሻ">
+        About Sof Omar Cave
+      </h2>
+      <p data-en="Sof Omar Cave is a spectacular limestone cave system in southeastern Ethiopia, located in the East Bale Zone of the Oromia Region. It is the longest cave in Ethiopia, with a mapped length of about 15.1 km and 42 entrances and exits."
+         data-om="Holqi Sof Omaar holqa laaymii bareedaa Itoophiyaa kibba-bahaatti argamu yoo ta'u, Godina Baalee Bahaa, Naannoo Oromiyaatti argama. Inni holqa Itoophiyaa keessaa isa dheeraa yoo ta'u, dheerinni isaa garagalcha 15.1 km fi balbala 42 qaba."
+         data-am="ሶፍ ኡመር ዋሻ በኢትዮጵያ ደቡብ ምስራቅ የሚገኝ አስደናቂ የኖራ ድንጋይ ዋሻ ስርዓት ነው። በኦሮሚያ ክልል ምስራቅ ባሌ ዞን ይገኛል። በኢትዮጵያ ውስጥ ረጅሙ ዋሻ ሲሆን፣ ርዝመቱ 15.1 ኪሜ እና 42 መግቢያዎች አሉት።">
+        Sof Omar Cave is a spectacular limestone cave system in southeastern Ethiopia, located in the East Bale Zone of the Oromia Region. It is the longest cave in Ethiopia, with a mapped length of about 15.1 km and 42 entrances and exits.
+      </p>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section id="gallery">
+      <h2 data-en="Photo Gallery" data-om="Galarii Suuraa" data-am="የፎቶ ማሳያ">Photo Gallery</h2>
+      <div class="gallery">
+        <img src="images/cave1.jpg" onerror="this.src='https://picsum.photos/seed/cave1/400/300'" alt="Sof Omar Cave 1" loading="lazy">
+        <img src="images/cave2.jpg" onerror="this.src='https://picsum.photos/seed/cave2/400/300'" alt="Sof Omar Cave 2" loading="lazy">
+        <img src="images/cave3.jpg" onerror="this.src='https://picsum.photos/seed/cave3/400/300'" alt="Sof Omar Cave 3" loading="lazy">
+        <img src="images/cave4.jpg" onerror="this.src='https://picsum.photos/seed/cave4/400/300'" alt="Sof Omar Cave 4" loading="lazy">
+        <img src="images/cave5.jpg" onerror="this.src='https://picsum.photos/seed/cave5/400/300'" alt="Sof Omar Cave 5" loading="lazy">
+        <img src="images/cave6.jpg" onerror="this.src='https://picsum.photos/seed/cave6/400/300'" alt="Sof Omar Cave 6" loading="lazy">
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section id="features">
+      <h2 data-en="Key Features" data-om="Amaloota Ijoo" data-am="ዋና ባህሪያት">Key Features</h2>
+      <ul>
+        <li data-en="Carved by the Weyib River through Jurassic limestone"
+            data-om="Laga Weyibtiin dhagaa laaymii Jurassic keessa qotame"
+            data-am="በዌይብ ወንዝ በጁራሲክ የኖራ ድንጋይ ውስጥ የተቀረጸ">
+          Carved by the Weyib River through Jurassic limestone
+        </li>
+        <li data-en="River sinks at Ayyo Makko and resurfaces at Holuca"
+            data-om="Lagni Ayyo Makko irratti lixeetti Holuca irratti deebi'ee mul'ata"
+            data-am="ወንዙ በአዮ ማኮ ይሰምጥና በሆሉካ ይወጣል">
+          River sinks at Ayyo Makko and resurfaces at Holuca
+        </li>
+        <li data-en="Named after Sheikh Sof Omar, an Islamic holy man"
+            data-om="Maqaan Sheekh Sof Omaar, nama qulqulluu Islaamaa irraa moggaafame"
+            data-am="በሼክ ሶፍ ኡመር ስም የተሰየመ">
+          Named after Sheikh Sof Omar, an Islamic holy man
+        </li>
+        <li data-en="Important Islamic pilgrimage and cultural site"
+            data-om="Iddoo imalaa Islaamaa fi aadaa barbaachisaa"
+            data-am="ጠቃሚ የኢስላማዊ ጉዞና ባህላዊ ቦታ">
+          Important Islamic pilgrimage and cultural site
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ GOOGLE MAP ============ -->
+    <section id="map">
+      <h2 data-en="Find Us on the Map" data-om="Kaartaa Irratti Nu Barbaadi" data-am="በካርታ ላይ ያግኙን">
+        Find Us on the Map
+      </h2>
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps?q=Sof+Omar+Cave+Ethiopia&output=embed"
+          width="100%" height="400"
+          style="border:0; border-radius:8px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <p style="margin-top:10px;">
+        <a href="https://www.google.com/maps/search/?api=1&query=Sof+Omar+Cave+Ethiopia"
+           target="_blank" class="btn-link"
+           data-en="Open in Google Maps ↗"
+           data-om="Google Maps Irratti Bani ↗"
+           data-am="በGoogle Maps ክፈት ↗">
+          Open in Google Maps ↗
+        </a>
+      </p>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section id="visit">
+      <h2 data-en="Plan Your Visit" data-om="Daawwannaa Karoorfadhu" data-am="ጉብኝትዎን ያቅዱ">Plan Your Visit</h2>
+      <ul>
+        <li data-en="Access from Robe town (~110 km, 2-hour drive by 4WD)"
+            data-om="Magaalaa Roobee irraa (~110 km, konkolaataa 4WD sa'aatii 2)"
+            data-am="ከሮቤ ከተማ (~110 ኪሜ፣ በ4WD 2 ሰዓት)">
+          Access from Robe town (~110 km, 2-hour drive by 4WD)
+        </li>
+        <li data-en="About 540 km from Addis Ababa"
+            data-om="Finfinnee irraa gara 540 km"
+            data-am="ከአዲስ አበባ 540 ኪሜ ያህል">
+          About 540 km from Addis Ababa
+        </li>
+        <li data-en="2 km walking route inside the cave (~2 hours)"
+            data-om="Karaa lixa holqa keessaa 2 km (sa'aatii ~2)"
+            data-am="በዋሻው ውስጥ 2 ኪሜ የእግር መንገድ (~2 ሰዓት)">
+          2 km walking route inside the cave (~2 hours)
+        </li>
+        <li data-en="Local guide required — around 300 ETB"
+            data-om="Gargaaraa naannoo barbaachisa — gara ETB 300"
+            data-am="የአካባቢ አስጎብኚ ያስፈልጋል — ወደ 300 ብር">
+          Local guide required — around 300 ETB
+        </li>
+        <li>
+          <strong data-en="Warning:" data-om="Akeekkachiisa:" data-am="ማስጠንቀቂያ፦">Warning:</strong>
+          <span data-en="Never enter during heavy rain (flash flood risk)."
+                data-om="Yeroo roobni cimaa jiru hin seenin (balaa lolaan)."
+                data-am="በከባድ ዝናብ ጊዜ አይግቡ (የጎርፍ አደጋ)።">
+            Never enter during heavy rain (flash flood risk).
+          </span>
+        </li>
+      </ul>
+      <button id="tipBtn"
+              data-en="Show a Travel Tip"
+              data-om="Gorsa Imalaa Agarsiisi"
+              data-am="የጉዞ ምክር አሳይ">
+        Show a Travel Tip
+      </button>
+      <p id="tipText"></p>
+    </section>
+
+    <!-- ============ VISITORS (Customer List) ============ -->
+    <section id="visitors">
+      <h2 data-en="Visitor List — Day by Day" data-om="Galmee Daawwattootaa — Guyyaa Guyyaan" data-am="የጎብኚዎች ዝርዝር — በየቀኑ">
+        Visitor List — Day by Day
+      </h2>
+
+      <form id="visitorForm" class="visitor-form">
+        <input type="text" id="visitorName" placeholder="Name / Maqaa / ስም" required />
+
+        <select id="visitorCountry">
+          <option value="Ethiopia">Ethiopia 🇪🇹</option>
+          <option value="Kenya">Kenya 🇰🇪</option>
+          <option value="USA">USA 🇺🇸</option>
+          <option value="UK">UK 🇬🇧</option>
+          <option value="Germany">Germany 🇩🇪</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <input type="date" id="visitorDate" required />
+
+        <button type="submit"
+                data-en="Add Visitor"
+                data-om="Daawwataa Dabali"
+                data-am="ጎብኚ ጨምር">
+          Add Visitor
+        </button>
+      </form>
+
+      <div id="visitorList" class="visitor-list"></div>
+
+      <button id="clearVisitors" class="clear-btn"
+              data-en="Clear All"
+              data-om="Hunda Haqi"
+              data-am="ሁሉንም አጥፋ">
+        Clear All
+      </button>
+    </section>
+        <!-- ============ CUSTOMER LOG / FIRST VISITOR / VISITORS OF CUSTOMER ============ -->
+    <section id="customerLog">
+      <h2 data-en="Customer Log — First, Messages, Visits"
+          data-om="Galmee Maamila — Jalqaba, Ergaawwan, Daawwannaa"
+          data-am="የደንበኛ መዝገብ — መጀመሪያ፣ መልእክቶች፣ ጉብኝቶች">
+        Customer Log — First, Messages, Visits
+      </h2>
+
+      <!-- 1. FIRST VISITOR OF TODAY -->
+      <div class="first-visitor-box">
+        <h3 data-en="🥇 First Visitor Today" data-om="🥇 Daawwataa Jalqabaa Har'a" data-am="🥇 የዛሬ መጀመሪያ ጎብኚ">
+          🥇 First Visitor Today
+        </h3>
+        <div id="firstVisitor" class="first-visitor"></div>
+      </div>
+      <!-- ============ TELEBIRR DEPOSIT (via Chapa) ============ -->
+<div class="deposit-box">
+  <h3>💰 Deposit Money via Telebirr</h3>
+  <div id="chapa-inline-form"></div>
+</div>
+
+<!-- Load Chapa script -->
+<script src="https://js.chapa.co/v1/inline.js"></script>
+
+      <!-- 2. CUSTOMER FORM -->
+      <div class="customer-form-box">
+        <h3 data-en="Register a New Customer" data-om="Maamila Haaraa Galmeessi" data-am="አዲስ ደንበኛ ይመዝግቡ">
+          Register a New Customer
+        </h3>
+        <form id="customerForm" class="customer-form">
+          <input type="text" id="custName" placeholder="Customer Name / Maqaa Maamilaa / የደንበኛ ስም" required />
+          <input type="text" id="custPhone" placeholder="Phone / Bilbila / ስልክ" />
+          <input type="text" id="custPurpose" placeholder="Purpose of Visit / Kaayyoo Daawwannaa / የጉብኝት ዓላማ" />
+          <input type="date" id="custDate" required />
+          <button type="submit"
+                  data-en="Add Customer"
+                  data-om="Maamila Dabali"
+                  data-am="ደንበኛ ጨምር">
+            Add Customer
+          </button>
+        </form>
+      </div>
+
+      <!-- 3. CUSTOMER LIST -->
+      <div class="customer-list-box">
+        <h3 data-en="Customers (Latest First)" data-om="Maamiltoota (Haaraan Dursa)" data-am="ደንበኞች (አዲስ በመጀመሪያ)">
+          Customers (Latest First)
+        </h3>
+        <div id="customerList"></div>
+      </div>
+
+      <!-- 4. MESSAGES RECEIVED FOR THIS CUSTOMER -->
+      <div class="customer-msg-box">
+        <h3 data-en="📨 Messages Received for Customers"
+            data-om="📨 Ergaawwan Maamiltootaaf Arganname"
+            data-am="📨 ለደንበኞች የተቀበሉ መልእክቶች">
+          📨 Messages Received for Customers
+        </h3>
+        <div id="customerMessages"></div>
+      </div>
+
+      <!-- 5. WHO VISITED WHICH CUSTOMER -->
+      <div class="visit-log-box">
+        <h3 data-en="👀 Who Visited Each Customer"
+            data-om="👀 Eenyu Maamila Tokko Tokko Daawwate"
+            data-am="👀 ማን የትኛውን ደንበኛ ጎበኘ">
+          👀 Who Visited Each Customer
+        </h3>
+        <div id="visitLog"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact">
+      <h2 data-en="Contact Us" data-om="Nu Quunnamaa" data-am="አግኙን">Contact Us</h2>
+
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
+        <p style="display:none">
+          <label>Don't fill this: <input name="bot-field" /></label>
+        </p>
+
+        <label data-en="Your Name"  data-om="Maqaa Keessan"   data-am="ስምዎ">Your Name</label>
+        <input type="text" name="name" required />
+
+        <label data-en="Your Email" data-om="Imeelii Keessan" data-am="ኢሜልዎ">Your Email</label>
+        <input type="email" name="email" required />
+
+        <label data-en="Message"    data-om="Ergaa"           data-am="መልእክት">Message</label>
+        <textarea name="message" rows="4" required></textarea>
+
+        <button type="submit"
+                data-en="Send Message"
+                data-om="Ergaa Ergi"
+                data-am="መልእክት ላክ">
+          Send Message
+        </button>
+      </form>
+
+      <p style="margin-top:15px">
+        <strong data-en="Bale Zone Culture and Tourism Office"
+                data-om="Waajjira Aadaa fi Turizimii Godina Baalee"
+                data-am="የባሌ ዞን ባህልና ቱሪዝም ጽሕፈት ቤት">
+          Bale Zone Culture and Tourism Office
+        </strong><br>
+        Email: firaolman109@gmail.com<br>
+        Phone: +251 928212836
+      </p>
+    </section>
+
+  </main>
+    <!-- ============ ADMIN PANEL ============ -->
+    <section id="admin">
+      <h2 data-en="Admin Panel" data-om="Paanaalii Bulchaa" data-am="የአስተዳዳሪ ፓነል">
+        Admin Panel
+      </h2>
+
+      <!-- LOGIN -->
+      <div id="adminLogin">
+        <p style="margin-bottom:10px;"
+           data-en="Enter password to manage visitors and messages."
+           data-om="Daawwattoota fi ergaa bulchuuf jecha iccitii galchi."
+           data-am="ጎብኚዎችንና መልእክቶችን ለማስተዳደር የይለፍ ቃል ያስገቡ።">
+          Enter password to manage visitors and messages.
+        </p>
+        <input type="password" id="adminPass" placeholder="Password / Jecha iccitii / የይለፍ ቃል" />
+        <button id="loginBtn"
+                data-en="Login" data-om="Seeni" data-am="ግባ">Login</button>
+        <p id="loginMsg" style="color:#e74c3c; margin-top:8px;"></p>
+      </div>
+
+      <!-- DASHBOARD -->
+      <div id="adminPanel" style="display:none;">
+        <div class="admin-tabs">
+          <button class="tab-btn active" data-tab="messages"
+                  data-en="📨 Messages" data-om="📨 Ergaawwan" data-am="📨 መልእክቶች">
+            📨 Messages
+          </button>
+          <button class="tab-btn" data-tab="visitors"
+                  data-en="👥 Visitors" data-om="👥 Daawwattoota" data-am="👥 ጎብኚዎች">
+            👥 Visitors
+          </button>
+          <button class="tab-btn logout-btn" id="logoutBtn"
+                  data-en="🚪 Logout" data-om="🚪 Ba'i" data-am="🚪 ውጣ">
+            🚪 Logout
+          </button>
+        </div>
+
+        <!-- MESSAGES TAB -->
+        <div id="tab-messages" class="tab-content">
+          <h3 data-en="Contact Messages" data-om="Ergaawwan Quunnamtii" data-am="የመልእክት ዝርዝር">
+            Contact Messages
+          </h3>
+          <div id="messagesList"></div>
+          <button id="clearMessages" class="clear-btn"
+                  data-en="Clear All Messages" data-om="Ergaawwan Hunda Haqi" data-am="ሁሉንም መልእክቶች አጥፋ">
+            Clear All Messages
+          </button>
+        </div>
+
+        <!-- VISITORS TAB -->
+        <div id="tab-visitors" class="tab-content" style="display:none;">
+          <h3 data-en="Manage Visitors" data-om="Daawwattoota Bulchi" data-am="ጎብኚዎችን ያስተዳድሩ">
+            Manage Visitors
+          </h3>
+
+          <form id="adminVisitorForm" class="visitor-form">
+            <input type="text" id="adminName" placeholder="Name / Maqaa / ስም" required />
+            <select id="adminCountry">
+              <option value="Ethiopia">Ethiopia 🇪🇹</option>
+              <option value="Kenya">Kenya 🇰🇪</option>
+              <option value="USA">USA 🇺🇸</option>
+              <option value="UK">UK 🇬🇧</option>
+              <option value="Germany">Germany 🇩🇪</option>
+              <option value="Other">Other</option>
+            </select>
+            <input type="date" id="adminDate" required />
+            <button type="submit"
+                    data-en="Add" data-om="Dabali" data-am="ጨምር">Add</button>
+          </form>
+
+          <div style="margin:15px 0;">
+            <button id="exportCSV" class="btn-small"
+                    data-en="⬇ Export CSV" data-om="⬇ CSV Buusi" data-am="⬇ CSV አውጣ">
+              ⬇ Export CSV
+            </button>
+          </div>
+
+          <div id="adminVisitorList"></div>
+
+          <button id="clearAdminVisitors" class="clear-btn"
+                  data-en="Clear All Visitors" data-om="Daawwattoota Hunda Haqi" data-am="ሁሉንም ጎብኚዎች አጥፋ">
+            Clear All Visitors
+          </button>
+        </div>
+      </div>
+    </section>
+  <footer>
+    <p>&copy; 2026 Sof Omar Cave Information Page.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

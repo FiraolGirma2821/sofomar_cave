@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="80" height="80">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1abc9c"/>
+      <stop offset="100%" stop-color="#2c3e50"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Circle background -->
+  <circle cx="60" cy="60" r="56" fill="url(#g)" stroke="#fff" stroke-width="3"/>
+
+  <!-- Cave arch -->
+  <path d="M30 90 Q30 40 60 40 Q90 40 90 90 Z" fill="#f4f4f4" opacity="0.95"/>
+
+  <!-- Inner cave shadow -->
+  <path d="M40 90 Q40 55 60 55 Q80 55 80 90 Z" fill="#2c3e50"/>
+
+  <!-- River line -->
+  <path d="M32 88 Q60 80 88 88" stroke="#1abc9c" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- Stars / sparkles -->
+  <circle cx="45" cy="30" r="2" fill="#fff"/>
+  <circle cx="75" cy="28" r="2" fill="#fff"/>
+  <circle cx="60" cy="22" r="2" fill="#fff"/>
+
+  <!-- Text -->
+  <text x="60" y="112" text-anchor="middle" font-size="10" font-family="Arial" fill="#2c3e50" font-weight="bold">SOF OMAR</text>
+</svg>
